@@ -42,9 +42,10 @@ def main():
                                     id integer PRIMARY KEY,
                                     id_cliente integer NOT NULL,
                                     vehiculo text,
-                                    descripcion text
+                                    descripcion text,
                                     precio REAL,
                                     precio_total REAL,
+                                    pagado BOOLEAN DEFAULT FALSE,
                                     FOREIGN KEY (id_cliente) REFERENCES clientes (id)
                                 ); """
 
@@ -66,6 +67,10 @@ def main():
         crear_tabla(conexion, sql_crear_tabla_clientes)
         # crear tabla productos
         crear_tabla(conexion, sql_crear_tabla_productos)
+        # crear tabla servicios
+        crear_tabla(conexion, sql_crear_tabla_servicios)
+        # crear tabla productos_servicio
+        crear_tabla(conexion, sql_crear_tabla_productos_servicio)
     else:
         print("Error! No se pudo conectar a la base de datos.")
 

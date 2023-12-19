@@ -4,6 +4,7 @@ from interface.ui_Menu import Ui_MainWindow
 from logic.l_Clientes import WidgetClientes
 from logic.l_Productos import WidgetProductos
 from logic.l_ServicioAdd import WidgetServiciosAdd
+from logic.l_Facturas import WidgetFacturas
 
 class MainWindow(QMainWindow,Ui_MainWindow):
     
@@ -17,6 +18,7 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         self.btnClientes.clicked.connect(self.clicked_btn_clientes)
         self.btnProductos.clicked.connect(self.clicked_btn_productos)
         self.btnServicios.clicked.connect(self.clicked_btn_servicios)
+        self.btnFacturas.clicked.connect(self.clicked_btn_facturas)
 
     #Funtions Events
     def toggle_left_menu(self):
@@ -36,6 +38,11 @@ class MainWindow(QMainWindow,Ui_MainWindow):
     def clicked_btn_servicios(self):
         self.destroy_content()
         self.layoutContainer.addWidget(WidgetServiciosAdd())
+
+
+    def clicked_btn_facturas(self):
+        self.destroy_content()
+        self.layoutContainer.addWidget(WidgetFacturas())
     
 
     def destroy_content(self):

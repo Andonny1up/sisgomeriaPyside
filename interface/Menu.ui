@@ -291,6 +291,18 @@
                </property>
               </widget>
              </item>
+             <item>
+              <widget class="QPushButton" name="btnFacturas">
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Facturas</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </widget>
           </item>

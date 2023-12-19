@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MenuPdMvXD.ui'
+## Form generated from reading UI file 'MenudAEoPv.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.6.0
 ##
@@ -159,6 +159,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addWidget(self.btnServicios)
 
+        self.btnFacturas = QPushButton(self.frMenuButtons)
+        self.btnFacturas.setObjectName(u"btnFacturas")
+        self.btnFacturas.setFont(font2)
+
+        self.verticalLayout_3.addWidget(self.btnFacturas)
+
 
         self.verticalLayout_10.addWidget(self.frMenuButtons, 0, Qt.AlignTop)
 
@@ -227,6 +233,7 @@ class Ui_MainWindow(object):
         self.btnClientes.setText(QCoreApplication.translate("MainWindow", u"Clientes", None))
         self.btnProductos.setText(QCoreApplication.translate("MainWindow", u"Productos", None))
         self.btnServicios.setText(QCoreApplication.translate("MainWindow", u"Servicios", None))
+        self.btnFacturas.setText(QCoreApplication.translate("MainWindow", u"Facturas", None))
         self.btnMenu.setText("")
     # retranslateUi
 
